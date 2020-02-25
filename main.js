@@ -11,6 +11,10 @@ function createWindow () {
     }
   })
 
+  win.webContents.session.setSpellCheckerDictionaryDownloadURL(
+    'https://modalduality.keybase.pub/hunspell801.zip'
+  )
+
   win.loadFile('index.html')
 
   win.webContents.openDevTools()
